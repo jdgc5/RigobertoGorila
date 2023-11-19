@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    background-color: black;
+    
+}
+
+.rigoberta{
+
+    background-image: url('/img/RigobertaIntro.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.divbutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    height: clamp(2rem, 2rem + 2vw, 10rem);
+    width: clamp(0.5rem, 0.2rem + 0.15vw, 15rem);
+}
+
+.button {
+
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #D06E30;
+    padding: 20px 20px;
+    font-size: clamp(1rem, 0.2958rem + 2.2535vw, 3rem);
+    transition: all 250ms ease-in-out;
+}
+
+.button:hover {
+
+    background-color: #be591a;
+
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rigoberto Gorila</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-section">
+            <h1 id="title">Escape from Rigoberta</h1>
+        </div>
+    </header>
+    <div class="game-area">
+        <div class="game">
+            <img src="/img/gorila.png" alt="gorila" id="gorila" width="450px" height="250px">
+            <img src="/img/character.png" alt="character" id="character" width="450px" height="250px">
+        </div>        
+        <div class="offgame">
+            <div class="offgame-left">
+                <button class="button m1bot" id="play">New Game</button>
+            </div>
+            <div class="offgame-right">
+                <div class="word-display infoButtons">
+                    <p id="display1" class="m1bot"></p>
+                </div>
+                <div class="word-display infoButtons">
+                    <p id="display2" class="m1bot"></p>
+                </div>
+                <div class="user-input">
+                    <input type="number" id="tryNumberInput" class="s">
+                    <button id="tryNumber" class="">Try</button>
+                </div>
+            </div>
+            <div class="offgame-points">
+                <div class="word-display infoButtons">
+                    <p id="display3" class="m1bot"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;2023 Rigoberta Gorila - All the right reserved</p>
+    </footer>
+    <script type="module" src="modules/script.js"></script>
+</body>
+</html>
