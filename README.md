@@ -4,7 +4,7 @@
 Escape from Rigoberta is an interactive browser-based game where players face a colossal gorilla moving towards a character. The goal is to solve as many mathematical operations as possible before the gorilla reaches the character.
 
 ## Gameplay
-In this game, a massive gorilla slowly advances towards a character every 5 seconds. Players must solve mathematical operations presented on the screen before the gorilla reaches the character. Correct solutions earn points, while incorrect answers might affect the gameplay.
+In this game, a massive gorilla slowly advances towards a character every 5 seconds. Players must solve mathematical operations presented on the screen before the gorilla reaches the character. Correct solutions earn points, while incorrect answers might affect the gameplay
 
 ## How to Play
 
