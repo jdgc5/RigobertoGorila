@@ -16,7 +16,7 @@ let operation2 = new Operations();
 var time = 5000;
 
 STARTNEWGAME.addEventListener('click', () => {
-    newGame();
+    
     TITLE.innerHTML = "Good Luck"
     DISPLAY1.innerHTML = operation1.getNumber();
     DISPLAY2.innerHTML = operation2.getNumber();
