@@ -1,0 +1,24 @@
+{
+  "name": "rigobertogorila",
+  "version": "1.0.0",
+  "description": "rigoberta gorila classroom exercise",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdgc5/RigobertoGorila.git"
+  },
+  "author": "J.David",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdgc5/RigobertoGorila/issues"
+  },
+  "homepage": "https://github.com/jdgc5/RigobertoGorila#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2"
+  }
+}

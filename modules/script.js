@@ -1,6 +1,7 @@
 import { GAME } from './Game.js';
 import { Operations } from './Operations.js';
 
+const ClientWebSocket = require('./client'); 
 const NEWGAME = new GAME.game();
 const STARTNEWGAME = document.getElementById("play");
 const TRYNUMBER = document.getElementById('tryNumber');
@@ -11,6 +12,8 @@ const DISPLAY3 = document.getElementById('display3');
 const GORILA = document.getElementById('gorila');
 const CHARACTER = document.getElementById('character');
 const TITLE = document.getElementById('title');
+
+const clientWebSocket = new ClientWebSocket();
 
 let operation1 = new Operations();
 let operation2 = new Operations();
@@ -66,11 +69,15 @@ STARTNEWGAME.addEventListener('click', () => {
         await changeInterval(); 
     });
 
-    function generateNumbers() {
-        operation1.generateRandomNumber();
-        DISPLAY1.innerHTML = operation1.getNumber();
-        operation2.generateRandomNumber();
-        DISPLAY2.innerHTML = operation2.getNumber();
+    async function generateNumbers() {
+        try {
+            const number1 = await clientWebSocket.sendMessage('generateNumber');
+            DISPLAY1.innerHTML = number1;
+            const number2 = await clientWebSocket.sendMessage('generateNumber');
+            DISPLAY2.innerHTML = number2;
+        } catch (error) {
+            console.log('Error getting data server', error);
+        }
     }
 
     function lose(){
